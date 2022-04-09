@@ -28,4 +28,6 @@ const jsonsImport = import.meta.globEager("./assets/test-json/*.json");</pre
       </ul>
     </li>
   </ul>
+  <h3>Si l'on ajoute "file based router" :</h3>
+  <router-view />
 </template>
