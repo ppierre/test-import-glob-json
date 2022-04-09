@@ -1,6 +1,8 @@
 <script setup>
 //ViteJS peut importer tout les JS,JSON... d'un dossier :
 const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
+// Il est mieux d'importer les données dans un fichier dédié, puis d'importer l'export de ce fichier :
+// import { jsonsImport } from "./test-json-import.js";
 </script>
 
 <template>

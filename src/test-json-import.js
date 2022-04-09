@@ -1,0 +1,1 @@
+export const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
