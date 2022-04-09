@@ -3,7 +3,7 @@
 import { jsonsImport } from "../../test-json-import.js";
 </script>
 <template>
-  <h4>fichier src\pages\test-json.vue</h4>
+  <h4>fichier src\pages\test-json/index.vue</h4>
   <p><router-link to="/">Retour à "index"</router-link></p>
   <p>affiche la collection du dossier <code>src/assets/test-json</code></p>
   <ul>
