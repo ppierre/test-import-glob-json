@@ -1,5 +1,6 @@
 <script setup>
-import { jsonsImport } from "../test-json-import.js";
+// fichier changé de test-json.vue à test-json/index.vue pour ne pas masquer test-json/[id].vue
+import { jsonsImport } from "../../test-json-import.js";
 </script>
 <template>
   <h4>fichier src\pages\test-json.vue</h4>
