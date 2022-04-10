@@ -9,9 +9,11 @@ import { jsonsImport } from "../../test-json-import.js";
   <ul>
     <!-- En faite, en vuejs c'est plus simple si l'on boucle seulement sur les valeurs de l'objet -->
     <li v-for="jsonContent of jsonsImport" :key="jsonContent.id">
-      <router-link :to="`/test-json/${jsonContent.id}`">{{
-        jsonContent.title
-      }}</router-link>
+      <!-- <router-link :to="`/test-json/${jsonContent.id}`">{{ -->
+      <router-link
+        :to="{ name: 'test-json-id', params: { id: jsonContent.id } }"
+        >{{ jsonContent.title }}</router-link
+      >
     </li>
   </ul>
 </template>
