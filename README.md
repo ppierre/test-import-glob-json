@@ -5,3 +5,5 @@
 //ViteJS peut importer tout les JS,JSON... d'un dossier :
 const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
 ```
+
+Site visible à https://vite-import-json.netlify.app/
