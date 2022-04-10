@@ -36,4 +36,8 @@ const route = useRoute();
   </div>
   <h3>Si l'on ajoute "file based router" :</h3>
   <router-view />
+  <hr />
+  <a href="/admin/index.html"
+    >Lien vers le "back office" fait par Netlify CMS
+  </a>
 </template>

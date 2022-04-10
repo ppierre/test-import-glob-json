@@ -7,3 +7,5 @@ const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
 ```
 
 Site visible à https://vite-import-json.netlify.app/
+
+Si lancé avec le serveur de développement (Eg. `localhost:4000`) pour pouvoir utiliser la partie admin en local : lancer aussi `npm run netlify-proxy`

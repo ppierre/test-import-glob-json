@@ -1,0 +1,5 @@
+{
+  "id": "c9e5ba25-bab0-406e-acae-f66c3265593b",
+  "title": "fait en local par netlify cms",
+  "body": "# Attention\n\ndemande de lancer avant : `npm run netlify-proxy`"
+}
