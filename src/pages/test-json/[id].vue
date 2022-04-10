@@ -6,8 +6,7 @@ const props = defineProps({
 const currentJson = Object.values(jsonsImport).find(
   ({ id: aId }) => aId == props.id // conversion implicite de nombre en chaine, mais fct avec uuid
 );
-import { Remarkable } from "remarkable";
-const md = new Remarkable();
+import { md } from "../../remarkable.js";
 const bodyHTML = md.render(currentJson.body);
 </script>
 
