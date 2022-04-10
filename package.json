@@ -8,6 +8,7 @@
     "netlify-proxy": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
+    "remarkable": "^2.0.1",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
   },
