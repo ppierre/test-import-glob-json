@@ -3,9 +3,8 @@ import { jsonsImport } from "../../test-json-import.js";
 const props = defineProps({
   id: { type: String },
 });
-const id = parseInt(props.id);
 const currentJson = Object.values(jsonsImport).find(
-  ({ id: aId }) => aId === id
+  ({ id: aId }) => aId == props.id // conversion implicite de nombre en chaine, mais fct avec uuid
 );
 </script>
 
