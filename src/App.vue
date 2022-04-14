@@ -1,9 +1,10 @@
 <script setup>
+import { useRoute } from "vue-router";
 //ViteJS peut importer tout les JS,JSON... d'un dossier :
 const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
 // Il est mieux d'importer les données dans un fichier dédié, puis d'importer l'export de ce fichier :
 // import { jsonsImport } from "./test-json-import.js";
-import { useRoute } from "vue-router";
+
 const route = useRoute();
 </script>
 
@@ -37,7 +38,6 @@ const route = useRoute();
   <h3>Si l'on ajoute "file based router" :</h3>
   <router-view />
   <hr />
-  <a href="/admin/index.html"
-    >Lien vers le "back office" fait par Netlify CMS
+  <a href="/admin/index.html">Lien vers le "back office" fait par Netlify CMS
   </a>
 </template>

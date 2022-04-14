@@ -1,9 +1,7 @@
 <template>
   <h4>src\pages\index.vue</h4>
   <p>le fichiers d'index du dossier page</p>
-  <router-link to="/test-json"
-    >Lien vers <code>src/pages/test-json.vue</code></router-link
-  >
+  <router-link to="/test-json">Lien vers <code>src/pages/test-json/index.vue</code></router-link>
   <h5>Cela a demandé :</h5>
   <ul>
     <li>Deux packets <code>npm</code> à instaler</li>

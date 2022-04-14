@@ -1,1 +1,2 @@
-export const jsonsImport = import.meta.globEager("./assets/test-json/*.json");
+const jsonsImportRaw = import.meta.globEager("./assets/test-json/*.json");
+export const jsonsImport = Object.fromEntries(Object.entries(jsonsImportRaw).map(([key, module]) => [module.default.id, module.default]))
