@@ -3,9 +3,13 @@ import { jsonsImport } from "../../test-json-import.js";
 const props = defineProps({
   id: { type: String },
 });
-const currentJson = Object.values(jsonsImport).find(
-  ({ id: aId }) => aId == props.id // conversion implicite de nombre en chaine, mais fct avec uuid
-);
+// Version si id à rechercher dans les valeurs
+// const currentJson = Object.values(jsonsImport).find(
+//   ({ id: aId }) => aId == props.id // conversion implicite de nombre en chaine, mais fct avec uuid
+// );
+// Version si id est utilisé comme clef du tableau associatif
+const currentJson = jsonsImport[props.id];
+
 import { md } from "../../remarkable.js";
 const bodyHTML = md.render(currentJson.body);
 </script>
